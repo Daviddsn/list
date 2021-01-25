@@ -1,0 +1,53 @@
+
+.list{
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list .item{
+    flex: 0 1 300px;
+    background: #ffffff;
+    margin: 1rem;
+    border-radius: .8rem;
+    padding: .8rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "header header"
+                        "quant marca"
+                        "footer footer";
+}
+.list .item .item-block {
+    padding: 1rem 0;
+}
+.list .item .item-block p{
+    padding: .6rem .4rem ;
+    font-size: 1.6rem;
+}
+.list .item .title{
+   font-size: 1.8rem;
+}
+.list .item .item-block.header{
+    grid-area: header ;
+}
+
+.list .item .box{
+    grid-area: footer;
+    background-color: #008000;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+}
+.list .item .box i{
+    font-size: 1.8rem;
+    padding-right: .8rem;
+}
+

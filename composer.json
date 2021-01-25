@@ -1,0 +1,30 @@
+{
+  "name": "daviddsn/list_wind",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Multserv",
+      "email": "email@example.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+     "coffeecode/router": "1.0.7",
+    "coffeecode/datalayer": "1.1.7",
+    "coffeecode/paginator": "1.0.5",
+    "league/plates" : "v4.0.0-alpha",
+    "ext-pdo": "*"
+  }
+}
